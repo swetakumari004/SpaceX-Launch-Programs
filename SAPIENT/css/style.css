@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/******************* Break Points **************/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.container__content {
+  background-color: #F2F2F2;
+  padding: 10px;
+}
+.container__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.container h1 {
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  margin-top: 0;
+}
+.container .filter__section {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 590px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container .filter__section {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.container .filter__section h4 {
+  padding: 0px 10px;
+}
+.container .filter__section h5 {
+  margin: 10px;
+}
+.container .filter__section h6 {
+  margin: 0px 30px 10px 30px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.container .filter__section ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.container .filter__section ul li {
+  background-color: #C4E09B;
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 5px;
+  margin: 0 15px 15px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container .filter__section ul li {
+    padding: 5px 20px;
+  }
+}
+.container .filter__section ul li.active {
+  background-color: #7CBA01;
+}
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container .card {
+    margin-top: 15px;
+  }
+}
+.container .card__wrapper {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  min-width: 260px;
+  margin: 0px 0px 15px 0;
+  max-width: 260px;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container .card__wrapper {
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+.container .card__wrapper.show {
+  display: block;
+}
+.container .card img {
+  width: 100%;
+}
+.container .card__name {
+  color: #48518C;
+  font-weight: 600;
+  margin: 10px 0px 20px;
+}
+.container .card__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.container .card__title span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #48518C;
+}
+.container .card__title ul {
+  list-style: none;
+  padding: 0px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+.container .card__title ul li:before {
+  content: "•";
+  color: #48518C;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}/*# sourceMappingURL=style.css.map */
